@@ -1,35 +1,47 @@
 package MultiThreading;
 
-import java.util.ArrayList;
-import java.util.stream.Collectors;
 
 
 public class ThreadImpl {
     
     public static void main(String[] args) {
     
+       
+
+
         
+        
+        MultiThread multiThread = new MultiThread();
+        MultiThread2 multiThread2 = new MultiThread2();
+        Thread t = new Thread(multiThread);
+        Thread t2 = new Thread(multiThread2);
+      
+        
+        t.start();
+       
+        
+
+        t2.start();
         //Stream API implentation
-        ArrayList <String> list = new ArrayList<>();
-        list.add("Karachi");
-        list.add("Hyd");
-        list.add("KHP");
-        list.add("LHR");
-        list.add("ISB");
-        list.add("FSB");
-        list.add("SK");
-        list =  (ArrayList<String>) list.stream().map((city) ->{
+        // ArrayList <String> list = new ArrayList<>();
+        // list.add("Karachi");
+        // list.add("Hyd");
+        // list.add("KHP");
+        // list.add("LHR");
+        // list.add("ISB");
+        // list.add("FSB");
+        // list.add("SK");
+        // list =  (ArrayList<String>) list.stream().map((city) ->{
            
-            if(city.equalsIgnoreCase("Hyd")){
-            city = "Hyderaabad";
-            return city ;   
-            }
-            return city;
+        //     if(city.equalsIgnoreCase("Hyd")){
+        //     city = "Hyderaabad";
+        //     return city ;   
+        //     }
+        //     return city;
             
-        }).collect(Collectors.toList());
-        Mythread mythread = new Mythread();
-        Thread thread = new Thread(mythread);
-        System.out.println(list);
-        thread.start();
+        // }).collect(Collectors.toList());
+      
+        // System.out.println(list);
+   
     }
 }

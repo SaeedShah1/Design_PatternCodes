@@ -21,7 +21,7 @@ public class BuilderPatternImplementation {
         Vehicle vehicle = vehicleBuildere.getVehicle();
         Vehicle vehicle2 = vehicleBuildere2.getVehicle();
         vehicle.getDetails();
-        System.out.println("Other Model  \n");
+        System.out.println("\n Other Model \n");
         vehicle2.getDetails();
 
 

@@ -9,7 +9,7 @@ private int engine;
 
  void getDetails(){
 
-     System.out.println("Vehicle Details \n Company :" + this.company+ "\n Model : " +this.modelName+ "\n Price :"+"Engine : " + this.engine+ " CC\n Price : " + this.price) ;
+     System.out.println("Vehicle Details \n Company :" + this.company+ "\n Model : " +this.modelName+ "\nEngine : " + this.engine+ " CC\n Price : " + this.price) ;
 }
 public Vehicle(String company, String modelName, int price, int engine) {
     this.company = company;
