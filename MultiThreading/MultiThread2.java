@@ -3,8 +3,6 @@ package MultiThreading;
 public class MultiThread2 implements Runnable {
 
     Mythread mythread;
-
-
     @Override
     public void run() {
         // TODO Auto-generated method stub

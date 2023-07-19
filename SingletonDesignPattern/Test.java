@@ -4,7 +4,6 @@ import java.lang.reflect.Method;
 
 public class Test {
 
-
     public static void main(String[] args) throws Exception {
         print();
 
@@ -33,7 +32,7 @@ public class Test {
     static void print() throws Exception {
         Object obj = Test2.getInstance();
         Method method = Test2.getInstance().getClass().getDeclaredMethod("print", null);
-
+     
         method.setAccessible(true);
         method.invoke(obj, null);
     }

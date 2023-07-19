@@ -2,8 +2,8 @@ package SingletonDesignPattern;
 import java.util.List;
 
 public class Test2 {
-
-    private static Test2 Test2Instance;
+ 
+    private static Test2 test2Instance;
 
     // mAking constructor private
     private Test2() {
@@ -12,11 +12,14 @@ public class Test2 {
     // Singleton Pattern
     public static Test2 getInstance() {
 
-        if (Test2Instance == null) {
-            return new Test2();
+        if (test2Instance == null) {
+            System.out.println("making new instance");
+             test2Instance = new Test2();
+            return test2Instance;
         }
+        System.out.println("returning same instance! ");
 
-        return Test2Instance;
+        return test2Instance;
     }
 
     List<String> names;

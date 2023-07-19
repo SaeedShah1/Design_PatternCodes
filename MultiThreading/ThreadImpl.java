@@ -17,11 +17,11 @@ public class ThreadImpl {
         Thread t2 = new Thread(multiThread2);
       
         
+        t2.start();
         t.start();
        
         
 
-        t2.start();
         //Stream API implentation
         // ArrayList <String> list = new ArrayList<>();
         // list.add("Karachi");
