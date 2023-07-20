@@ -1,5 +1,7 @@
 package com.practice.Entity;
 
+import java.util.List;
+
 import org.springframework.stereotype.Component;
 
 import lombok.Getter;
@@ -13,5 +15,6 @@ public class Student {
     private Integer id;
     private String name;
     private String address;
+    private List<Student> students;
     
 }
